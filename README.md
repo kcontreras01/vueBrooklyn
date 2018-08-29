@@ -1,6 +1,6 @@
 # brooklyn
 
-> A Vue.js project
+> A Vue.js project and update to [original Brook + Lyn](https://github.com/kcontreras01/brooklyn) Front End project
 
 ## Build Setup
 

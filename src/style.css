@@ -1,0 +1,46 @@
+.main {
+  font-family: Helvetica, sans-serif;
+  color: #656565;
+  text-align: center;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  /* normal, bold */
+  /* 100, 200, 300, 400, 500, 600, 700, 800, 900 */
+  font-weight: 100;
+  border-bottom: 2px solid;
+  margin-bottom: 20px;
+  
+}
+
+h1 {
+  font-size: 40px;
+  padding: 40px;
+
+}
+
+h2 {
+  font-size: 26px;
+  text-align: right;
+}
+
+p {
+  font-size: 14px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  text-align: left;
+  padding: 10px;
+}
+
+img {
+  border: 2px solid;
+}
+
+a {
+  color: #656565;
+}
+
+#bigimage {
+  width: 80%;
+}

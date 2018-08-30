@@ -1,12 +1,19 @@
 <template>
   <div>
-    <h1>Contact Me</h1>
-  <p>
-    <ul>
-      <li>Email: {{email}}</li>
-      <li>Website: {{web}}</li>
-    </ul>
-  </p>
+    <h2>Contact</h2>
+
+    <p>{{errors}}</p>
+
+    <form @submit.prevent="contactForm">
+        <p>Email: <input type="text" placeholder="Email" v-model="form.email"></p>
+        <p>First Name: <input type="text" placeholder="First" v-model="form.first"></p>
+        <p>Last Name: <input type="text" placeholder="Last" v-model="form.last"></p>
+        <p>Message: <textarea placeholder="Message" v-model="form.message"></textarea></p>
+
+        <button>Submit</button>
+    </form>
+        
+        
   </div>
 </template>
 
@@ -15,8 +22,29 @@ export default {
   name: 'Contact',
   data(){
     return {
-      email: '',
-      web: ''
+        form: {
+            email: '',
+            first: '',
+            last: '',
+            message: ''
+        },
+        errors: []
+    }
+  },
+  methods: {
+    contactForm() {
+        if (this.form.name && this.form.email) {
+        return true;
+      }
+
+      this.errors = [];
+
+      if (!this.form.name) {
+        this.errors.push('Name required.');
+      }
+      if (!this.form.email) {
+        this.errors.push('Email required.');
+      }
     }
   }
 }

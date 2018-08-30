@@ -14,7 +14,7 @@
                 {
                   id: 0,
                   text: 'Home',
-                  page:'/Home'
+                  page:'/'
                 },
                 {
                   id: 1,
@@ -23,6 +23,11 @@
                 },
                 {
                   id: 2,
+                  text: 'Shop',
+                  page:'/Shop'
+                },
+                {
+                  id: 3,
                   text: 'Contact',
                   page:'/Contact'
                 }

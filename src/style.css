@@ -10,7 +10,6 @@
 h1, h2 {
   text-transform: uppercase;
   font-weight: 100;
-  border-bottom: 2px solid;
   margin-bottom: 20px;
   
 }
@@ -24,6 +23,7 @@ h1 {
 h2 {
   font-size: 26px;
   text-align: right;
+  border-bottom: 2px solid;
 }
 
 p, footer {
@@ -34,9 +34,10 @@ p, footer {
   padding: 10px;
 }
 
-.footer {
-    grid-row-start: 2;
-    grid-row-end: 3;
+footer {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 5px; 
 }
 
 img {
@@ -47,6 +48,46 @@ a {
   color: #656565;
 }
 
+nav {
+    padding-bottom: 5px; 
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 6em;
+    padding-right: 6em;
+}
+
 #bigimage {
   width: 80%;
+}
+
+.clothing {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#clothing-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+
+#clothing-container img {
+    border: none;
+}
+
+@media only screen and (max-width: 400px)  {
+    #clothing-container {
+        flex-direction: column;
+    }
+
+    .clothing {
+        width: 50%;
+        margin: auto;
+    }
 }

@@ -1,13 +1,23 @@
 <template>
-	<div> 
+	<div id="nav"> 
         <nav> 
    			<router-link class="spacing" v-for="routes in links" :key="routes.id" :to="`${routes.page}`">{{routes.text}}</router-link>
+
+            
    		</nav> 
+            <div id="icons">
+                <font-awesome-icon icon="search"/>
+                <font-awesome-icon icon="shopping-cart"/>
+            </div>
+        
 	</div>
 </template>
 
 <script>
+    import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
     export default {
+        components: {FontAwesomeIcon},
         data() {
             return {
                 links: [
@@ -41,4 +51,6 @@
   .spacing { 
     Margin-right: 10px; 
   } 
+
+
 </style>

@@ -81,6 +81,17 @@ nav {
     border: none;
 }
 
+#map {
+    width:80%;
+    margin: auto;
+    max-width: 500px;
+}
+
+#contact-page p {
+    text-align: center;
+    padding: 0;
+}
+
 @media only screen and (max-width: 400px)  {
     #clothing-container {
         flex-direction: column;

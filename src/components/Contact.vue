@@ -1,51 +1,24 @@
 <template>
-  <div>
+  <div id="contact-page">
     <h2>Contact</h2>
-
-    <p>{{errors}}</p>
-
-    <form @submit.prevent="contactForm">
-        <p>Email: <input type="text" placeholder="Email" v-model="form.email"></p>
-        <p>First Name: <input type="text" placeholder="First" v-model="form.first"></p>
-        <p>Last Name: <input type="text" placeholder="Last" v-model="form.last"></p>
-        <p>Message: <textarea placeholder="Message" v-model="form.message"></textarea></p>
-
-        <button>Submit</button>
-    </form>
         
+        <p><a href="mailto:example@email.com">EMail Us</a></p>
+        <p>(800) 555-5555</p>
+
+    <h2>Store Info</h2>
+        <h3>Hours</h3>
+        <p>Mon-Fri 10am-6pm</p>
+
+        <h3>Address</h3>
+        <p>123 Main Street</p>
+        <p>Mr. Matté, MM 00011</p>
+        <img src="../assets/map.svg" alt="map" id="map">
         
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Contact',
-  data(){
-    return {
-        form: {
-            email: '',
-            first: '',
-            last: '',
-            message: ''
-        },
-        errors: []
-    }
-  },
-  methods: {
-    contactForm() {
-        if (this.form.name && this.form.email) {
-        return true;
-      }
-
-      this.errors = [];
-
-      if (!this.form.name) {
-        this.errors.push('Name required.');
-      }
-      if (!this.form.email) {
-        this.errors.push('Email required.');
-      }
-    }
-  }
+  name: 'Contact'
 }
 </script>

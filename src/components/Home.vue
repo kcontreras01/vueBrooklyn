@@ -6,9 +6,9 @@
       <img :src="logo" :key="logo" id="bigimage">
     </div>
 
-    <div id="clothing-container">
+    <!-- <div id="clothing-container">
         <img v-for="shirt in clothing" :src="shirt.src" alt="shirt" class="clothing">
-    </div>
+    </div> -->
   </div>
 </template>
 
